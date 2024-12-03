@@ -1,0 +1,6 @@
+<h2>Delete Contact</h2>
+<p>Are you sure you want to delete the contact <strong>{{contact.name}}</strong>?</p>
+<form action="/delete/{{contact._id}}" method="POST">
+    <button type="submit">Yes, Delete</button>
+    <a href="/">Cancel</a>
+</form>
