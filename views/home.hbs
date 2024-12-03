@@ -1,0 +1,13 @@
+{{! contacts.hbs }}
+<h2>Contact List</h2>
+<ul>
+    {{#each contacts}}
+        <li>
+            <strong>{{this.name}}</strong> - {{this.phone}}
+            <a href="/contacts/edit/{{this._id}}">Edit</a> |
+            <a href="/contacts/delete/{{this._id}}">Delete</a>
+        </li>
+    {{/each}}
+</ul>
+
+<a href="/add">Add New Contact</a>
